@@ -2,7 +2,10 @@ baseURL = "https://v2kiran.github.io/site/"
 languageCode = "en-us"
 title = "Kiran Reddy"
 
-canonifyURLs=false
+# canonifyURLs=false
+
+
+paginate = 5
 
 theme="soho"
 enableInlineShortcodes = true
@@ -52,6 +55,18 @@ customJs = ["js/blog.js"]
   weight = 100
   identifier = "posts"
   url = "/posts/"
+
+   [[menu.main]]
+  name = "Categories"
+  weight = 200
+  identifier = "categories"
+  url = "/categories/"
+
+   [[menu.main]]
+  name = "Tags"
+  weight = 200
+  identifier = "tags"
+  url = "/tags/"
 
   [[menu.main]]
   name = "About"
